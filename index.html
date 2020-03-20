@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Portfolio</title>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+    </script>
+
+    <title>Venkat_K_Portfolio</title>
 </head>
 
 <body>
@@ -29,25 +32,35 @@
             </div>
         </div>
         <p id="matter">
-            I am Venkat K,I am trained as a Front-end Developer in "masai-school" Bangalore.I am very 
-                interested in bulding applications and websites and I want to make it as my profession and 
-                if you give me an oppurtunity I will work hard to improve company wealth as well as my 
-                knowledge.
+            I am Venkat K,I am trained as a Front-end Developer in "masai-school", Bangalore.I am very
+            interested in bulding applications and websites and I want to make it as my profession and
+            if you give me an oppurtunity I will work hard to improve company wealth as well as my
+            knowledge.
         </p>
         <div id="contact">
-            <a href="https://twitter.com/Venkatasubbu913"><img
-                    src="https://icons-for-free.com/iconfiles/png/512/media+social+social+media+tweet+twit+twitter+icon-1320196801133766807.png" alt="twitter.jpg" height="32px"></a>
-            <a href="https://www.linkedin.com/in/venkat-subbu-229882138/"><img
-                    src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-square2-512.png" alt="linkedin.jpg" height="32px"></a>
             <a href="https://github.com/Venkatasubbu913"><img
-                    src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/160_Hackerrank-512.png"
-                    alt="github.jpg" height="32px"></a>
-            <a href="https://www.hackerrank.com/venkatasubbu913?hr_r=1"><img
                     src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="hackerRank.jpg"
-                    height="32px"></a>
+                    height="36px"></a>
+
+            <a href="https://twitter.com/Venkatasubbu913"><img
+                    src="https://icons-for-free.com/iconfiles/png/512/media+social+social+media+tweet+twit+twitter+icon-1320196801133766807.png"
+                    alt="twitter.jpg" height="32px"></a>
+
+            <a href="https://www.linkedin.com/in/venkat-subbu-229882138/"><img
+                    src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-square2-512.png"
+                    alt="linkedin.jpg" height="32px"></a>
+
+            <a href="https://www.hackerrank.com/venkatasubbu913?hr_r=1"><img
+                    src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/160_Hackerrank-512.png"
+                    alt="github.jpg" height="34px">
+            </a>
         </div>
 
-        <a href="#resume"><img src="./source/download.png" alt="download.png" width="220px"></a>
+        <!-- <a href="#resume"><img src="./source/download.png" alt="download.png" width="220px"></a> -->
+        <button id="resumeBtn"><a href="https://drive.google.com/open?id=1EYabMStXoy1NjBB4V47doHq3zZY43F1p">
+                Open Resume
+            </a>
+        </button>
 
         <div id="courses">
             <div>
@@ -70,6 +83,18 @@
                 <img src="./source/javascript.svg" alt="" height="80px">
                 <!-- <b>Java Script</b> -->
             </div>
+            <div>
+                <img src="./source/jquery.png" alt="" height="80px">
+                <!-- <b>jQuery</b> -->
+            </div>
+            <div>
+                <img src="./source/react.svg" alt="" height="80px">
+                <!-- <b>React</b> -->
+            </div>
+            <div>
+                <img src="./source/redux.svg" alt="" height="80px">
+                <!-- <b>Redux</b> -->
+            </div>
         </div>
     </div>
     <!-- down part is page2 -->
@@ -77,26 +102,27 @@
         <h2>Proficiences</h2>
         <div id="cards">
             <div>
-                <img src="./source/frontEnd.jpg" alt="frontend.jpg" height="200px" width="220px">
-                <div>
-                    <h3>Front-end</h3>
-                </div>
-            </div>
-            <div>
                 <img src="./source/dsLogo2.jpg" alt="dsLogo2.jpg" height="200px" width="220px">
                 <div>
                     <h3>Data Structures</h3>
                 </div>
             </div>
+            <div>
+                <img src="./source/frontEnd.jpg" alt="frontend.jpg" height="200px" width="220px">
+                <div>
+                    <h3>Front-end</h3>
+                </div>
+            </div>
         </div>
+        <h2>Statistics</h2>
         <div id="timings">
             <div>
-                <p class="numP">1000+</p>
-                <p>Hours of coding</p>
+                <p class="numP">900+</p>
+                <p>Hours of<br> coding</p>
             </div>
             <div>
-                <p class="numP">250+</p>
-                <p>Hacker rank Problems</p>
+                <p class="numP">200+</p>
+                <p>Hacker rank <br>Problems</p>
             </div>
             <div>
                 <p class="numP">200+</p>
@@ -104,11 +130,8 @@
             </div>
             <div>
                 <p class="numP">100+</p>
-                <p>Hours of soft skills</p>
+                <p>Hours of <br>soft skills</p>
             </div>
-        </div>
-        <div id="gitCommits">
-            <img src="./source/gitCommits.png" alt="" srcset="">
         </div>
     </div>
     <!-- down part is page-3 -->
@@ -116,12 +139,78 @@
         <h1>Projects</h1>
         <div id="projectCards">
             <div>
+                <img src="./source/expensePjoject.png" alt="slack.jpg" height="180px" width="300px">
+                <div class="cardBody">
+                    <h3>Expense Manager</h3>
+                    <p>It's a simple monthly expense calculator</p>
+                    <button class="htmlBtn"><a href="https://github.com/Venkatasubbu913/P_expense.github.io">
+                            Code</a>
+                    </button>
+                    <button class="htmlBtn"><a href="https://venkatasubbu913.github.io/P_expense.github.io/">
+                            View</a>
+                    </button>
+                </div>
+                <div class="cardBody2">
+                    <img src="./source/html-5.svg" alt="" height="40px">
+                    <img src="./source/css-3.svg" alt="" height="40px">
+                    <img src="./source/javascript.svg" alt="" height="40px">
+                </div>
+            </div>
+            <div>
                 <img src="./source/slack-featured.jpg" alt="slack.jpg" height="180px" width="300px">
                 <div class="cardBody">
                     <h3>Slack Copy</h3>
-                    <p>In this Slack i've not attained all features and I changed some backgrounds.</p>
-                    <button class="htmlBtn"><a
-                            href="https://github.com/masai-school/cohort_3/tree/master/submissions/sm_034_Venkat/week_12/day_1">html</a></button>
+                    <p>In this Slack Home page & I changed some backgrounds too.</p>
+                    <button class="htmlBtn"><a href="https://github.com/Venkatasubbu913/P_slackHome.github.io">
+                            Code</a>
+                    </button>
+                    <button class="htmlBtn"><a href="https://venkatasubbu913.github.io/P_slackHome.github.io/">
+                            View</a>
+                    </button>
+                </div>
+                <div class="cardBody2">
+                    <img src="./source/html-5.svg" alt="" height="40px">
+                    <img src="./source/css-3.svg" alt="" height="40px">
+                    <img src="./source/bootstrap.svg" alt="" height="40px">
+                </div>
+            </div>
+            <div>
+                <img src="./source/studentProject.png" alt="slack.jpg" height="180px" width="300px">
+                <div class="cardBody">
+                    <h3>Student Marks Record</h3>
+                    <p>In it we can save different students Marks and we can view them later.</p>
+                    <button class="htmlBtn"><a href="https://github.com/Venkatasubbu913/P_student.github.io">
+                            Code</a>
+                    </button>
+                    <button class="htmlBtn"><a href="https://venkatasubbu913.github.io/P_student.github.io/">
+                            View</a>
+                    </button>
+                </div>
+                <div class="cardBody2">
+                    <img src="./source/html-5.svg" alt="" height="40px">
+                    <img src="./source/css-3.svg" alt="" height="40px">
+                    <img src="./source/bootstrap.svg" alt="" height="40px">
+                    <img src="./source/jquery.png" alt="" height="40px">
+                </div>
+            </div>
+            <div>
+                <img src="./source/employeeProject.png" alt="employeeList.jpg" height="180px" width="300px">
+                <div class="cardBody">
+                    <h3>Employees Observer</h3>
+                    <p>In this you can enter different employees data and you can easily distinguish
+                        them by using given options.</p>
+                    <button class="htmlBtn"><a href="https://github.com/Venkatasubbu913/P_employees.github.io">
+                            Code</a>
+                    </button>
+                    <button class="htmlBtn"><a href="https://venkatasubbu913.github.io/P_employees.github.io/">
+                            View</a>
+                    </button>
+                </div>
+                <div class="cardBody2">
+                    <img src="./source/html-5.svg" alt="" height="40px">
+                    <img src="./source/css-3.svg" alt="" height="40px">
+                    <img src="./source/bootstrap.svg" alt="" height="40px">
+                    <img src="./source/jquery.png" alt="" height="40px">
                 </div>
             </div>
             <div>
@@ -130,25 +219,106 @@
                     <h3>Cars Maintainer</h3>
                     <p>Through this we can know the info of the cars we have means which car is went to which trip etc..
                     </p>
-                    <button class="htmlBtn"><a
-                            href="https://github.com/masai-school/cohort_3/blob/master/submissions/sm_034_Venkat/week_7/day_4/session_1/index.html">html</a></button>
-                    <button class="btn2"><a
-                            href="https://github.com/masai-school/cohort_3/blob/master/submissions/sm_034_Venkat/week_7/day_4/session_1/index.js">Java
-                            Script</a></button>
+                    <button class="htmlBtn"><a href="https://github.com/Venkatasubbu913/P_cars.github.io">
+                            Code</a>
+                    </button>
+                    <button class="htmlBtn"><a href="https://venkatasubbu913.github.io/P_cars.github.io/">
+                            View</a>
+                    </button>
                 </div>
-            </div>
-            <div>
-                <img src="./source/employeeList.jpg" alt="employeeList.jpg" height="180px" width="300px">
-                <div class="cardBody">
-                    <h3>Employees Observer</h3>
-                    <p>In this you can enter different employees data and you can easily distinguish them by using given
-                        options.</p>
-                    <button class="htmlBtn"><a
-                            href="https://github.com/masai-school/cohort_3/tree/master/submissions/sm_034_Venkat/week_12/day_1">html</a></button>
+                <div class="cardBody2">
+                    <img src="./source/html-5.svg" alt="" height="40px">
+                    <img src="./source/css-3.svg" alt="" height="40px">
+                    <img src="./source/bootstrap.svg" alt="" height="40px">
+                    <img src="./source/jquery.png" alt="" height="40px">
                 </div>
             </div>
         </div>
+        <hr>
+
+        <div id="projectCards">
+            <div>
+                <img src="./source/ZzebPayProject.png" alt="Zebpay.jpg" height="180px" width="300px">
+                <div class="cardBody">
+                    <h3>Zeb Pay copy</h3>
+                    <p>I tried to copy it,but it is not resposve.</p>
+                    <button class="htmlBtn"><a
+                            href="https://github.com/masai-school/cohort_3/tree/master/submissions/sm_034_Venkat/week_9/day_2/session_2">
+                            Code</a>
+                    </button>
+                </div>
+                <div class="cardBody2">
+                    <img src="./source/html-5.svg" alt="" height="40px">
+                    <img src="./source/css-3.svg" alt="" height="40px">
+                    <img src="./source/bootstrap.svg" alt="" height="40px">
+                    <img src="./source/react.svg" alt="" height="40px">
+                </div>
+            </div>
+            <div>
+                <img src="./source/gitProject.png" alt="Zebpay.jpg" height="180px" width="300px">
+                <div class="cardBody">
+                    <h3>Github User/Repo Search</h3>
+                    <p>
+                        In this you can search for an User by name / for repo by it's name and language.
+                    </p>
+                    <button class="htmlBtn"><a
+                            href="https://github.com/masai-school/cohort_3/tree/master/submissions/sm_034_Venkat/week_9/day_2/session_1">
+                            Code</a>
+                    </button>
+                </div>
+                <div class="cardBody2">
+                    <img src="./source/html-5.svg" alt="" height="40px">
+                    <img src="./source/css-3.svg" alt="" height="40px">
+                    <img src="./source/bootstrap.svg" alt="" height="40px">
+                    <img src="./source/react.svg" alt="" height="40px">
+                </div>
+            </div>
+            <div>
+                <img src="./source/Zto-doProject.png" alt="Zebpay.jpg" height="180px" width="300px">
+                <div class="cardBody">
+                    <h3>To-Do List</h3>
+                    <p>We can enter our daily tasks and we can manage them.</p>
+                    <button class="htmlBtn"><a
+                            href="https://github.com/masai-school/cohort_3/tree/master/submissions/sm_034_Venkat/week_8/day_2/session_2">
+                            Code</a>
+                    </button>
+                </div>
+                <div class="cardBody2">
+                    <img src="./source/html-5.svg" alt="" height="40px">
+                    <img src="./source/css-3.svg" alt="" height="40px">
+                    <img src="./source/bootstrap.svg" alt="" height="40px">
+                    <img src="./source/react.svg" alt="" height="40px">
+                </div>
+            </div>
+            <div>
+                <img src="./source/ZtimerProject.png" alt="Zebpay.jpg" height="180px" width="300px">
+                <div class="cardBody">
+                    <h3>Timer & Stop Watch</h3>
+                    <p>This works as a Google Timer & Stop Watch</p>
+                    <button class="htmlBtn"><a
+                            href="https://github.com/masai-school/cohort_3/tree/master/submissions/sm_034_Venkat/week_8/day_3">
+                            Code</a>
+                    </button>
+                </div>
+                <div class="cardBody2">
+                    <img src="./source/html-5.svg" alt="" height="40px">
+                    <img src="./source/css-3.svg" alt="" height="40px">
+                    <img src="./source/bootstrap.svg" alt="" height="40px">
+                    <img src="./source/react.svg" alt="" height="40px">
+                </div>
+            </div>
+        </div>
+
+        <h3>GitHub Calendar:</h3>
+        <div id="gitCommits" class="calendar">
+        </div>
     </div>
+    <script type="text/javascript">
+        GitHubCalendar(".calendar", "venkatasubbu913",
+            {
+                responsive: true,
+            });
+    </script>
 </body>
 
 </html>
